@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.zhibodemo.ui.ui.regist.RegistActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pink"
+        app:title="注册"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/user"/>
+
+        <EditText
+            android:id="@+id/et_user"
+            android:layout_marginLeft="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名(至少六位)"
+            android:layout_gravity="center"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/pass"/>
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_marginLeft="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码(至少八位)"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/pass"/>
+
+        <EditText
+            android:id="@+id/et_pass2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="请确认密码(至少八位)"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_regist"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:background="@mipmap/btn1"
+        android:text="注册"
+        android:textColor="@color/pink"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:text="注册即表明您已同意直播条款"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

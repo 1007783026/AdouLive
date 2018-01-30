@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.zhibodemo.ui.ui.mine.MineFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pink"
+        app:title="我的信息"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/ic_launcher" />
+                <!-- 昵称阿斗号-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="106dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLength="4"
+                            android:text="暂无昵称"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_gender"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@mipmap/girl" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_acount_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="阿斗号：88888888"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- 查看编辑主页 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_check_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5sp"
+                        android:text="查看编辑主页"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:background="@mipmap/right" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_margin="5dp"
+                android:background="@color/little_gray" />
+            <!-- 我的关注-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_my_fork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的关注"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@color/little_gray" />
+                <!--  我的粉丝-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_my_fans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的粉丝"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/little_gray" />
+
+            <com.example.administrator.zhibodemo.ui.weight.MineProfileItem
+                android:id="@+id/ep_acount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:profileitemtitle="账户"
+                app:profilelefticon="@mipmap/zhanghu" />
+
+            <com.example.administrator.zhibodemo.ui.weight.MineProfileItem
+                android:id="@+id/ep_get"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:profileitemtitle="收益"
+                app:profilelefticon="@mipmap/shouyi" />
+
+            <com.example.administrator.zhibodemo.ui.weight.MineProfileItem
+                android:id="@+id/ep_watch_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:profileitemtitle="观看记录"
+                app:profilelefticon="@mipmap/zuijin" />
+
+            <com.example.administrator.zhibodemo.ui.weight.MineProfileItem
+                android:id="@+id/ep_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:profileitemtitle="等级"
+                app:profilelefticon="@mipmap/dengji" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/little_white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pink"
+        app:navigationIcon="@mipmap/back"
+        app:title="账号资料"
+        app:titleTextColor="@color/white" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.example.administrator.zhibodemo.ui.weight.EditProfileItem
+                android:id="@+id/ep_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemtitle="头像"
+                app:itemtype="avatar" />
+
+            <com.example.administrator.zhibodemo.ui.weight.EditProfileItem
+                android:id="@+id/ep_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemtitle="昵称" />
+
+            <com.example.administrator.zhibodemo.ui.weight.EditProfileItem
+                android:id="@+id/ep_adouid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iseditable="false"
+                app:itemtitle="阿斗号" />
+
+            <include
+                android:id="@+id/ep_erweima"
+                layout="@layout/edit_profile_erweima" />
+
+            <com.example.administrator.zhibodemo.ui.weight.EditProfileItem
+                android:id="@+id/ep_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemtitle="性别" />
+
+            <com.example.administrator.zhibodemo.ui.weight.EditProfileItem
+                android:id="@+id/ep_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemtitle="地区" />
+
+            <com.example.administrator.zhibodemo.ui.weight.EditProfileItem
+                android:id="@+id/ep_geqian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemtitle="个性签名" />
+
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="保存"
+                android:textSize="15sp"
+                android:textColor="@color/little_gray"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+</LinearLayout>

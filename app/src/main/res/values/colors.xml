@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pink">#F87094</color>
+    <color name="gray">#707070</color>
+    <color name="little_gray">#bfbfbf</color>
+    <color name="blue">#2ABCE5</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="little_pink">#edd7d7</color>
+    <color name="transprant">#0fff</color>
+    <color name="litle_blue">#8FD1E1</color>
+    <color name="little_white">#EAEAEA</color>
+    <color name="yellow">#f8d470</color>
+    <color name="green">#70f8ab</color>
+    <color name="edit_profile_name">#303030</color>
+    <color name="alphawhite">#4fff</color>
+    <color name="gold">#f7a204</color>
+    <color name="alpha_gray">#9666</color>
+    <color name="orange">#ff8c00</color>
+
+
+</resources>

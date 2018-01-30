@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/white">
+    <!-- 编辑资料单个条目布局-->
+    <!--编辑资料-->
+    <TextView
+        android:id="@+id/tv_editprofile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:text="xxx"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <!-- 右键头-->
+    <ImageView
+        android:id="@+id/iv_right_arraw"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@mipmap/right" />
+
+    <!--  要修改的信息 文字-->
+    <TextView
+        android:id="@+id/tv_editprofile_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_right_arraw"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="--------"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <!-- 头像  隐藏-->
+    <ImageView
+        android:id="@+id/iv_editprofile_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/ic_launcher"
+        android:visibility="invisible" />
+
+    <!-- 横线-->
+    <TextView
+        android:id="@+id/tv_seperater"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/little_gray" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_edit_profile_height">55dp</dimen>
+    <dimen name="item_live_height">160dp</dimen>
+    <dimen name="ProfileItem_profileitemtype">60dp</dimen>
+</resources>

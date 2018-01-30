@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.zhibodemo.ui.weight.HeightSensenableRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/heightscl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tencent.ilivesdk.view.AVRootView
+        android:id="@+id/arv_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transprant"
+        app:navigationIcon="@mipmap/back" />
+
+    <com.example.administrator.zhibodemo.ui.weight.BottomSwitchLayout
+        android:id="@+id/bottomswitchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.example.administrator.zhibodemo.ui.weight.BottomChatSwitchLayout
+        android:id="@+id/chatswitchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.example.administrator.zhibodemo.ui.weight.LiveMsgListView
+        android:id="@+id/lmlv"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/chatswitchlayout" />
+
+    <com.example.administrator.zhibodemo.ui.weight.danmu.DanmuView
+        android:id="@+id/danmuview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lmlv"  />
+
+    <tyrantgit.widget.HeartLayout
+        android:id="@+id/heartlayout"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+
+
+</com.example.administrator.zhibodemo.ui.weight.HeightSensenableRelativeLayout>
